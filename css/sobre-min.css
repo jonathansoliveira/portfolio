@@ -1,0 +1,16 @@
+.about {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-fonte-padrao);
+    background: #EAF2FD;
+}
+
+.about__title { 
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.about__paragraph {
+    font-size: .875rem;
+    line-height: 1rem;
+    text-align: justify;
+}

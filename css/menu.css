@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte-padrao);
+    align-items: center;
+    font-weight: 500;
+    height: 56px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu__cabecalho {
+   display: flex;
+   align-items: center;
+}
+
+.menu__imagem {
+ width: 22px;
+ height: 22px;
+}
+
+.menu__titulo {
+   margin-left: 0;
+   font-weight: bolder;
+   font-size: 14px;
+}
+
+.menu__list {
+    display: none;
+}
+
+.menu__list__item__contato {
+ font-size: 14px;
+ font-weight: 400;
+ color: #464646;
+}
+
+
+@media screen and (min-width: 768px){
+    .menu__list {
+        display: flex;
+    }
+    
+    .menu__list__item {
+     margin-left: 1rem;
+    }
+}

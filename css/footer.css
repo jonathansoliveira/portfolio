@@ -1,0 +1,14 @@
+.footer {
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    width: 100%;
+    color: var(--cor-fonte-padrao);
+}
+
+.footer__rodape{
+    height: 102px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

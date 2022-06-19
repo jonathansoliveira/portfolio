@@ -19,18 +19,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    width:100%;
+    font-size: .875rem;
 }
-ol, ul,li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
 
 .container {
+    box-sizing: border-box;
     padding: 1rem;
 }
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 

@@ -1,4 +1,6 @@
-
+.title{
+    font-size: .875rem;
+}
 
 .title__profile{
     width: 98px;
@@ -11,9 +13,9 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: .875rem;
     font-weight: 600;
     font-family: var(--fonte-padrao);
+    color: var(--cor-fonte-padrao);
 }
 
 .title__bio{
@@ -30,9 +32,32 @@
 .title__subsection{
     font-family: var(--fonte-padrao);
     font-weight: 400;
-    font-size: .875rem;
     text-align: justify;
     line-height: 1rem;
     color: var(--cor-fonte-padrao);
     margin: 1rem auto;
+}
+
+@media screen and (min-width: 768px){
+    .title {
+        font-size: 1rem;
+    }
+
+    .title__div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title__profile{
+        order: 2;
+        width: 146px;
+    }
+
+    .title__container{
+        width: 524px;
+    }
+
+    .title__network{
+        font-weight: 500;
+    }
 }

@@ -30,3 +30,13 @@
     display: block;  
     width: 33.33%;
 }
+
+@media screen and (min-width: 768px) {
+    .hobbies {
+        font-size: 1rem;
+    }
+
+    .hobbies__title{
+        margin-bottom: 2rem;
+    }
+}

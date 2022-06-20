@@ -93,45 +93,8 @@ section.footer{
    
 }
 
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menu */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
-
+@media screen and (min-width: 768px){
+   .container {
+    padding: 2rem;
+   }
 }

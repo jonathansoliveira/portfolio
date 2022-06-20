@@ -2,6 +2,7 @@
     font-family: var(--fonte-padrao);
     color: var(--cor-fonte-padrao);
     background: #EAF2FD;
+    font-size: .875rem;
 }
 
 .about__title { 
@@ -11,7 +12,12 @@
 }
 
 .about__paragraph {
-    font-size: .875rem;
     line-height: 1rem;
     text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        font-size: 1rem;
+    }
 }

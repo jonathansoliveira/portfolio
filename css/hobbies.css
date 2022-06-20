@@ -9,6 +9,7 @@
     font-weight: 700;
     line-height: 1.625rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .hobbies__line {
@@ -27,9 +28,5 @@
 
 .hobbies__box{
     display: block;  
-    width: 50%;
-}
-
-.hobbies__box:last-child {
-    margin-top: 1rem;
+    width: 33.33%;
 }

@@ -34,4 +34,5 @@
     text-align: justify;
     line-height: 1rem;
     color: var(--cor-fonte-padrao);
+    margin: 1rem auto;
 }

@@ -7,6 +7,7 @@
     height: 56px;
     width: 100%;
     box-sizing: border-box;
+    padding: 0rem 1rem;
 }
 
 .menu__cabecalho {
@@ -31,8 +32,17 @@
 
 .menu__list__item__contato {
  font-size: 14px;
- font-weight: 400;
+ font-weight: 600;
  color: #464646;
+ list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu{
+        height: 88px;
+        margin: auto;
+        padding: 0 2rem;
+    }
 }
 
 
@@ -47,5 +57,11 @@
 
     .menu__list__item__contato{
         display: none;
+    }
+
+    .menu{
+        height: 88px;
+        margin: auto;
+        padding: 0 2rem;
     }
 }

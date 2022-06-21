@@ -28,9 +28,16 @@ a{
     color: var(--cor-de-link);
 }
 
-.container {
+.container{
     box-sizing: border-box;
     padding: 1rem;
+}
+
+
+.all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
@@ -98,3 +105,4 @@ section.footer{
     padding: 2rem;
    }
 }
+

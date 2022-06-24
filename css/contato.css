@@ -4,6 +4,7 @@
     font-size: 1rem;
     font-family: var(--fonte-padrao);
     margin-top: 1rem;
+    width: 100%;
 }
 
 .formcontato__img{
@@ -42,6 +43,7 @@
     border-bottom: 1px solid rgba(0,0,0,0.2);
     border-radius: 4px;
     font-size: 1rem;
+    resize: none;
 }
 
 .formcontato__textarea{
@@ -70,4 +72,16 @@
     background-color: #0c458f;
     color: white;
     transition: all .7s;
+}
+
+@media screen and (min-width: 1024px){
+    .formcontato__contacto{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .formcontato__img{
+        display: block;
+        width: 400px;
+    }
 }

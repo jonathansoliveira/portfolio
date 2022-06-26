@@ -57,7 +57,7 @@
                 <h2 class="title__bio">Olá, meu nome é Jonathan dos Santos Oliveira e sou Desenvolvedor Front End</h2>
                 <h3 class="title__subsection">Eu sou formado em Engenharia Civil e atualmente estou participando do curso de programação no projeto Oracle ONE na Alura.</h3>
                 <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
+                    <!-- Links de suas redes sociais -->
                     <li class="title__network__item"><a href="https://github.com/jonathansoliveira" target="_blank">Github <img src="assets\arrow.png"> </a></li>
                     <li class="title__network__item"><a href="https://www.linkedin.com/in/jonathansoliveira77/" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
                     <li class="title__network__item"><a href="https://www.instagram.com/jonatthan.o/" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
@@ -136,7 +136,7 @@
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
+                    <!-- Logo do local de formação -->
                     <li class="academic__courses__item__img"><img src="assets/logo-alura.png" class="logo__academic" alt="logo da Alura"></li>
                     <li class="academic__courses__item__title"><h4>Programação Web</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2022 a atualmente - Alura</p></li>
@@ -144,7 +144,7 @@
             </div>
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
+                    <!-- Logo do local de formação -->
                     <li class="academic__courses__item__img"><img src="assets/logo-uneb.svg" class="logo__academic" alt="logo da Uneb"></li>
                     <li class="academic__courses__item__title"><h4>Engenharia Civil</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2012 - 2017 - UNEB</p></li>
@@ -157,13 +157,13 @@
     <section class="experience container">
         <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
         <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
+            <!-- Projeto/trabalho -->
             <img class="experience__img" src="assets/codificador-de-texto.jpg" alt="foto do prototipo do projeto codificador de texto">
             <div class="experience__info">
                 <h2 class="experience__title">Codificador / Decodificador de texto</h2>
                 <h3 class="experience__text">Codificador, criado com HTML, CSS e JavaScript </h3>
                     <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <!-- Demonstração do projeto no Github e/ou GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/jonathansoliveira" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href="https://jonathansoliveira.github.io/decodificador-text/" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
                     </div>
@@ -171,13 +171,13 @@
         </div>  
 
         <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
+            <!-- Projeto/trabalho -->
             <img class="experience__img" src="assets/jogo-da-forca.JPG" alt="foto do protótipo do jogo da forca">
             <div class="experience__info">
                 <h2 class="experience__title">Jogo da Forca</h2>
                 <h3 class="experience__text">Jogo criado com HTML, CSS e JavaScript</h3>
                     <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <!-- Demonstração do projeto no Github e/ou GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/jonathansoliveira" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href="https://jonathansoliveira.github.io/jogo-da-forca" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
                     </div>
@@ -195,10 +195,22 @@
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                     <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required>
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <div class="input-container">
+                            <input class="formcontato__input campo-invalido" type="text" id="nome" placeholder="Nome" data-tipo="nome" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="formcontato__input campo-invalido" type="email" id="email" placeholder="Email" data-tipo="email" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="formcontato__input campo-invalido" type="text" id="assunto" data-tipo="assunto" placeholder="Assunto" required>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="formcontato__textarea campo-invalido" id="mensagem" name="mensagem" placeholder="Sua mensagem" data-tipo="mensagem" required></input>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
                         <button class="formcontato__botao">Enviar mensagem</button>
                     </form>
                 </div>
@@ -212,8 +224,9 @@
                 <p>2022</p>
             </div>
         </section>
-    <!-- Script Linkado do seu documento de JavaScript -->
+    <!-- Script Linkado do documento de JavaScript -->
 <script src="validate.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
 

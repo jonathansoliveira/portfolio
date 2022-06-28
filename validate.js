@@ -1,14 +1,5 @@
-
-
-
-
 function valida(input){
     const tipoDeInput = input.dataset.tipo;
-
-    if(validadores[tipoDeInput]){
-        validadores[tipoDeInput](input)
-    }
-
     if(input.validity.valid){
         input.parentElement.classList.remove('dados-invalido');
         input.parentElement.querySelector('.input-mensagem-erro').innerHTML = ''
@@ -18,10 +9,6 @@ function valida(input){
     }
 }
 
-
-const validadores = {
-    dado:input => validaCampo(input)
-}
 
 const mensagensDeErro = {
     nome: {
@@ -49,17 +36,18 @@ function mostraMensagemDeErro(tipoDeInput, input){
     return mensagem;
 }
 
-function validaCampo(input) {
-    input.setCustomValidity(mensagem)
-}
-
-
-
-
 const inputs = document.querySelectorAll('input')
 
 inputs.forEach(input => {
     input.addEventListener('blur', (evento) => {
+        valida(evento.target)
+    })
+})
+
+const textareas = document.querySelectorAll('textarea')
+console.log(textareas)
+textareas.forEach(textarea => {
+    textarea.addEventListener('blur', (evento) => {
         valida(evento.target)
     })
 })
